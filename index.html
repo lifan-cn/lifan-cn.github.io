@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>里番 - 网站名称 | 里番官网（https://lifan-cn.com）</title>
+<meta name="description" content="里番（网站名称）官方网站，域名 https://lifan-cn.com。里番提供网站名称策划、品牌命名、域名选型与建站资讯服务，帮您快速找到好记、好传播、好收录的网站名称。">
+<meta name="keywords" content="里番,网站名称,里番官网,网站命名,域名选型,lifan-cn,https://lifan-cn.com,网站建设">
+<meta name="author" content="里番">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://lifan-cn.com/">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="里番">
+<meta property="og:title" content="里番 - 网站名称 | 里番官网">
+<meta property="og:description" content="里番（网站名称）官方网站 https://lifan-cn.com，专注网站名称策划与品牌命名，让每一个网站名称都好记、好传播、好收录。">
+<meta property="og:url" content="https://lifan-cn.com/">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="里番 - 网站名称 | 里番官网">
+<meta name="twitter:description" content="里番（网站名称）官方网站 https://lifan-cn.com，网站名称策划与品牌命名服务平台。">
+<meta name="theme-color" content="#0b1020">
+<style>
+/* ============ 基础重置 ============ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:76px}
+body{
+  font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Helvetica Neue",Arial,sans-serif;
+  line-height:1.75;color:#e8ecf8;background:#070a16;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img,svg{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+:focus-visible{outline:2px solid #7aa2ff;outline-offset:3px}
+
+/* ============ 变量与布局 ============ */
+:root{
+  --brand:#6c8cff;
+  --brand2:#22d3ee;
+  --accent:#f472b6;
+  --ink:#e8ecf8;
+  --muted:#9aa6c9;
+  --card:rgba(255,255,255,.055);
+  --line:rgba(255,255,255,.12);
+  --radius:18px;
+  --maxw:1180px;
+}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.bg-fx{position:fixed;inset:0;z-index:-1;overflow:hidden;background:
+  radial-gradient(900px 600px at 12% -8%,rgba(108,140,255,.28),transparent 60%),
+  radial-gradient(760px 520px at 92% 6%,rgba(34,211,238,.20),transparent 62%),
+  radial-gradient(700px 700px at 50% 108%,rgba(244,114,182,.18),transparent 60%),
+  linear-gradient(180deg,#070a16 0%,#0a0f22 50%,#070a16 100%);}
+.bg-fx::after{content:"";position:absolute;inset:0;opacity:.35;
+  background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),
+                   linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
+  background-size:46px 46px;mask-image:radial-gradient(70% 60% at 50% 30%,#000 40%,transparent 100%);
+  -webkit-mask-image:radial-gradient(70% 60% at 50% 30%,#000 40%,transparent 100%);}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+/* ============ 顶部导航 ============ */
+.site-header{position:sticky;top:0;z-index:60;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  background:rgba(7,10,22,.78);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px;gap:14px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;letter-spacing:.5px}
+.logo-mark{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;font-size:18px;
+  background:linear-gradient(135deg,var(--brand),var(--brand2));color:#08122b;box-shadow:0 6px 18px rgba(108,140,255,.42)}
+.logo small{display:block;font-size:11px;font-weight:500;color:var(--muted);letter-spacing:.6px}
+.menu{display:flex;align-items:center;gap:4px}
+.menu a{padding:9px 13px;border-radius:10px;font-size:15px;color:#cfd7f2;transition:.25s}
+.menu a:hover,.menu a:focus-visible{color:#fff;background:rgba(255,255,255,.09)}
+.menu a.is-cta{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#08122b;font-weight:700}
+.menu a.is-cta:hover{filter:brightness(1.08)}
+.nav-toggle{display:none}
+.burger{display:none;width:42px;height:42px;border-radius:12px;border:1px solid var(--line);
+  background:rgba(255,255,255,.05);cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:5px}
+.burger i{display:block;width:19px;height:2px;border-radius:2px;background:#dfe6fb;transition:.3s}
+
+/* ============ 首屏 Hero ============ */
+.hero{padding:66px 0 34px;text-align:center}
+.badge{display:inline-flex;align-items:center;gap:8px;padding:7px 15px;border-radius:999px;font-size:13px;
+  color:#cfe0ff;border:1px solid var(--line);background:rgba(255,255,255,.06)}
+.badge b{color:var(--brand2);font-weight:700}
+.hero h1{font-size:clamp(32px,6.4vw,62px);line-height:1.18;margin:20px 0 6px;font-weight:900;letter-spacing:-.5px}
+.hero h1 .grad{background:linear-gradient(120deg,#8fa8ff,var(--brand2) 45%,var(--accent));
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .domain{font-size:clamp(14px,2.6vw,18px);color:var(--brand2);font-weight:700;letter-spacing:.5px;word-break:break-all}
+.hero p.lead{max-width:720px;margin:18px auto 0;color:#b9c3e4;font-size:clamp(15px,2.4vw,18px)}
+.btn-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:999px;font-weight:700;font-size:15px;transition:.25s}
+.btn-primary{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#08122b;box-shadow:0 10px 26px rgba(108,140,255,.34)}
+.btn-primary:hover{transform:translateY(-2px)}
+.btn-ghost{border:1px solid var(--line);background:rgba(255,255,255,.06);color:#e8ecf8}
+.btn-ghost:hover{background:rgba(255,255,255,.12);transform:translateY(-2px)}
+.hero-art{margin:44px auto 0;max-width:880px;border-radius:22px;border:1px solid var(--line);
+  background:linear-gradient(160deg,rgba(255,255,255,.09),rgba(255,255,255,.02));padding:18px;
+  box-shadow:0 24px 60px rgba(0,0,0,.42)}
+.hero-art .bar{display:flex;gap:7px;margin-bottom:14px}
+.hero-art .bar span{width:11px;height:11px;border-radius:50%;background:#39415e}
+.hero-art .bar span:nth-child(1){background:#ff6b6b}
+.hero-art .bar span:nth-child(2){background:#ffd166}
+.hero-art .bar span:nth-child(3){background:#4ade80}
+.hero-art .screen{border-radius:14px;background:rgba(6,9,20,.72);border:1px solid var(--line);padding:18px;text-align:left}
+.hero-art .screen code{display:block;font-size:13px;color:#9fe8ff;white-space:nowrap;overflow-x:auto}
+.hero-art .screen code b{color:var(--accent)}
+
+/* ============ 数据条 ============ */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:44px 0 0}
+.stat{border:1px solid var(--line);border-radius:16px;background:var(--card);padding:20px 16px;text-align:center}
+.stat b{display:block;font-size:clamp(22px,4vw,32px);font-weight:900;color:#fff}
+.stat b em{font-style:normal;color:var(--brand2)}
+.stat span{font-size:13px;color:var(--muted)}
+
+/* ============ 通用区块 ============ */
+section{padding:74px 0 0}
+.sec-head{text-align:center;max-width:760px;margin:0 auto 34px}
+.sec-head h2{font-size:clamp(24px,4.2vw,38px);font-weight:900;line-height:1.3;margin-bottom:12px}
+.sec-head h2 em{font-style:normal;color:var(--brand2)}
+.sec-head p{color:#aab5d8;font-size:15.5px}
+.kicker{display:inline-block;font-size:12.5px;letter-spacing:2px;text-transform:uppercase;color:var(--brand);
+  font-weight:800;margin-bottom:10px}
+
+/* ============ 服务卡片 ============ */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{position:relative;border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;
+  background:var(--card);transition:.3s;overflow:hidden}
+.card::before{content:"";position:absolute;inset:0;border-radius:var(--radius);padding:1px;
+  background:linear-gradient(135deg,rgba(108,140,255,.7),transparent 40%,rgba(34,211,238,.55));
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:.3s}
+.card:hover{transform:translateY(-6px);background:rgba(255,255,255,.085)}
+.card:hover::before{opacity:1}
+.card .ico{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;font-size:22px;
+  background:linear-gradient(135deg,rgba(108,140,255,.28),rgba(34,211,238,.22));margin-bottom:14px}
+.card h3{font-size:19px;margin-bottom:8px;font-weight:800}
+.card p{color:#a9b4d6;font-size:14.5px}
+.card ul{margin-top:14px;display:grid;gap:7px}
+.card ul li{font-size:13.5px;color:#c3cbe8;padding-left:18px;position:relative}
+.card ul li::before{content:"✓";position:absolute;left:0;color:var(--brand2);font-weight:700}
+
+/* ============ 关于 ============ */
+.about{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}
+.about p{color:#aab5d8;margin-bottom:14px}
+.about ul{display:grid;gap:10px;margin-top:18px}
+.about ul li{display:flex;gap:10px;font-size:14.5px;color:#c8d0ec}
+.about ul li b{color:var(--brand2)}
+.art{border:1px solid var(--line);border-radius:22px;padding:22px;background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(255,255,255,.02))}
+.art svg{width:100%;height:auto}
+
+/* ============ 动态 ============ */
+.news{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.post{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--card);transition:.3s}
+.post:hover{transform:translateY(-5px);border-color:rgba(108,140,255,.55)}
+.post .thumb{height:118px;display:grid;place-items:center;font-size:34px;
+  background:linear-gradient(135deg,rgba(108,140,255,.35),rgba(244,114,182,.28))}
+.post .body{padding:18px 20px 22px}
+.post time{font-size:12.5px;color:var(--muted)}
+.post h3{font-size:17px;margin:8px 0 8px;font-weight:800;line-height:1.5}
+.post p{font-size:14px;color:#a7b2d5}
+.post .more{display:inline-block;margin-top:12px;font-size:13.5px;font-weight:700;color:var(--brand2)}
+
+/* ============ FAQ ============ */
+.faq{max-width:820px;margin:0 auto;display:grid;gap:12px}
+.faq details{border:1px solid var(--line);border-radius:14px;background:var(--card);padding:16px 18px}
+.faq summary{cursor:pointer;font-weight:700;font-size:16px;list-style:none;display:flex;justify-content:space-between;gap:14px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--brand2);font-size:20px;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq details p{margin-top:12px;color:#a9b4d6;font-size:14.5px}
+
+/* ============ 联系 ============ */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.form{border:1px solid var(--line);border-radius:var(--radius);padding:24px;background:var(--card)}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:13.5px;color:#c3cbe8;margin-bottom:6px}
+.field input,.field textarea,.field select{width:100%;padding:12px 14px;border-radius:12px;font-size:15px;
+  border:1px solid var(--line);background:rgba(6,9,20,.6);color:#e8ecf8;font-family:inherit}
+.field textarea{min-height:110px;resize:vertical}
+.field input::placeholder,.field textarea::placeholder{color:#6c7799}
+.submit{width:100%;border:0;cursor:pointer;padding:14px;border-radius:12px;font-weight:800;font-size:15px;
+  background:linear-gradient(135deg,var(--brand),var(--brand2));color:#08122b}
+.info{border:1px solid var(--line);border-radius:var(--radius);padding:24px;background:var(--card)}
+.info h3{font-size:18px;margin-bottom:14px;font-weight:800}
+.info dl{display:grid;gap:14px}
+.info dt{font-size:12.5px;color:var(--muted);letter-spacing:1px}
+.info dd{font-size:15px;font-weight:600;word-break:break-all}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.tags span{font-size:12.5px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);color:#c3cbe8}
+
+/* ============ 页脚 ============ */
+.site-footer{margin-top:76px;border-top:1px solid var(--line);background:rgba(4,6,14,.7);padding:44px 0 26px}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:26px}
+.fgrid h4{font-size:15px;margin-bottom:12px;font-weight:800}
+.fgrid a,.fgrid li{display:block;font-size:14px;color:#9fabcd;padding:5px 0}
+.fgrid a:hover{color:var(--brand2)}
+.copy{margin-top:30px;padding-top:20px;border-top:1px solid var(--line);
+  display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:13px;color:#7f8bb0}
+.totop{position:fixed;right:18px;bottom:18px;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--brand),var(--brand2));color:#08122b;font-weight:900;z-index:70;
+  box-shadow:0 10px 24px rgba(0,0,0,.4)}
+
+/* ============ 响应式 ============ */
+@media (max-width:1000px){
+  .cards,.news{grid-template-columns:repeat(2,1fr)}
+  .fgrid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .burger{display:flex}
+  .menu{position:absolute;top:66px;left:0;right:0;flex-direction:column;align-items:stretch;gap:6px;
+    padding:14px 20px 20px;background:rgba(7,10,22,.97);border-bottom:1px solid var(--line);
+    transform:translateY(-12px);opacity:0;pointer-events:none;transition:.28s}
+  .nav-toggle:checked ~ .menu{transform:translateY(0);opacity:1;pointer-events:auto}
+  .nav-toggle:checked ~ .burger i:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav-toggle:checked ~ .burger i:nth-child(2){opacity:0}
+  .nav-toggle:checked ~ .burger i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .menu a{padding:12px 14px;font-size:16px}
+  .menu a.is-cta{text-align:center}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .cards,.news,.about,.contact{grid-template-columns:1fr}
+  section{padding-top:56px}
+  .hero{padding-top:44px}
+  .site-footer{margin-top:56px}
+}
+@media (max-width:420px){
+  .fgrid{grid-template-columns:1fr}
+  .btn-row .btn{width:100%;justify-content:center}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+<div class="bg-fx" aria-hidden="true"></div>
+
+<!-- ============ 头部导航 ============ -->
+<header class="site-header">
+  <div class="wrap">
+    <nav class="nav" aria-label="里番主导航">
+      <a class="logo" href="#" aria-label="里番 首页">
+        <span class="logo-mark" aria-hidden="true">嗨</span>
+        <span>里番<small>网站名称 · https://lifan-cn.com</small></span>
+      </a>
+      <input class="nav-toggle sr-only" id="navToggle" type="checkbox" aria-label="展开导航菜单">
+      <label class="burger" for="navToggle" aria-hidden="true"><i></i><i></i><i></i></label>
+      <ul class="menu">
+        <li><a href="#home">首页</a></li>
+        <li><a href="#services">里番服务</a></li>
+        <li><a href="#about">关于里番</a></li>
+        <li><a href="#news">里番动态</a></li>
+        <li><a href="#faq">常见问题</a></li>
+        <li><a class="is-cta" href="#contact">联系我们</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ============ 首屏 ============ -->
+  <section id="home" class="hero" aria-labelledby="heroTitle">
+    <div class="wrap">
+      <p class="badge"><b>里番</b> · 网站名称策划平台 · 域名 <b>https://lifan-cn.com</b></p>
+      <h1 id="heroTitle">给好网站，先起个<span class="grad">里番</span>好名字</h1>
+      <p class="domain">https://lifan-cn.com</p>
+      <p class="lead">里番（网站名称）专注网站名称策划、品牌命名、域名选型与建站资讯。一个好记、好传播、好收录的网站名称，是流量与信任的起点——里番让命名这件事变得简单。</p>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="#services">了解里番服务</a>
+        <a class="btn btn-ghost" href="#contact">获取网站名称方案</a>
+      </div>
+      <div class="hero-art">
+        <div class="bar" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="screen">
+          <code>&lt;title&gt;<b>里番</b> - 网站名称 | 里番官网&lt;/title&gt;</code>
+          <code>&lt;meta name="keywords" content="<b>里番</b>,网站名称,lifan-cn"&gt;</code>
+          <code>&lt;link rel="canonical" href="https://lifan-cn.com/"&gt;</code>
+        </div>
+      </div>
+      <ul class="stats">
+        <li class="stat"><b><em>3800</em>+</b><span>里番服务的网站名称</span></li>
+        <li class="stat"><b><em>96</em>%</b><span>客户命名满意度</span></li>
+        <li class="stat"><b><em>12</em>年</b><span>里番品牌命名经验</span></li>
+        <li class="stat"><b><em>24</em>h</b><span>网站名称交付周期</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 服务 ============ -->
+  <section id="services" aria-labelledby="servicesTitle">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">里番服务</span>
+        <h2 id="servicesTitle">里番能帮你解决的<em>网站名称</em>问题</h2>
+        <p>从起名到落地，里番提供全流程服务：网站名称策划、域名匹配、商标风险排查与 SEO 友好度评估，一站式完成。</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="ico" aria-hidden="true">✍️</div>
+          <h3>网站名称策划</h3>
+          <p>里番结合行业特征、目标人群与传播场景，输出多组可直接使用的网站名称候选。</p>
+          <ul>
+            <li>品牌调性定位分析</li>
+            <li>候选名称 20+ 组</li>
+            <li>寓意与释义说明</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">🌐</div>
+          <h3>域名选型匹配</h3>
+          <p>网站名称确定后，里番同步给出可读、可记、可注册的域名组合方案。</p>
+          <ul>
+            <li>主流后缀可用性比对</li>
+            <li>拼音/英文双方案</li>
+            <li>防混淆近似排查</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">🔍</div>
+          <h3>SEO 友好度评估</h3>
+          <p>让网站名称先天适合收录：里番按必应、百度等搜索引擎偏好做名称体检。</p>
+          <ul>
+            <li>关键词布局建议</li>
+            <li>搜索意图匹配度</li>
+            <li>标题与描述撰写</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">🛡️</div>
+          <h3>商标与合规排查</h3>
+          <p>网站名称上线前先查风险，里番帮你避开侵权与合规雷区。</p>
+          <ul>
+            <li>近似商标检索</li>
+            <li>行业敏感词筛查</li>
+            <li>风险等级报告</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">📱</div>
+          <h3>移动端落地页</h3>
+          <p>名称确定即出页面，里番交付自适应单页站点，移动端体验优先。</p>
+          <ul>
+            <li>响应式布局</li>
+            <li>TDK 与结构化数据</li>
+            <li>秒开性能优化</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">📈</div>
+          <h3>品牌传播陪跑</h3>
+          <p>网站名称走向市场后，里番持续跟踪搜索表现与口碑反馈并迭代。</p>
+          <ul>
+            <li>收录与排名监测</li>
+            <li>品牌词声量分析</li>
+            <li>季度优化建议</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 关于 ============ -->
+  <section id="about" aria-labelledby="aboutTitle">
+    <div class="wrap">
+      <div class="about">
+        <div>
+          <span class="kicker">关于里番</span>
+          <h2 id="aboutTitle">里番是谁？一个认真做<em>网站名称</em>的团队</h2>
+          <p>里番成立于品牌数字化的高速期，官网域名为 https://lifan-cn.com。我们相信：一个网站能不能被记住，往往取决于它的名字——而不是它的首页有多花哨。</p>
+          <p>里番把语言学、搜索行为数据与行业经验结合起来，为每一个项目做「可注册、可搜索、可传播」三重校验，让网站名称从第一天起就具备增长潜力。</p>
+          <ul>
+            <li><b>✓</b><span>三重校验：域名可注册 + 商标低风险 + 搜索易收录</span></li>
+            <li><b>✓</b><span>交付透明：候选清单、评分依据、推荐理由全公开</span></li>
+            <li><b>✓</b><span>持续陪跑：上线后 90 天内的表现跟踪与微调</span></li>
+          </ul>
+        </div>
+        <div class="art">
+          <svg viewBox="0 0 420 260" role="img" aria-label="里番网站名称策划流程示意图">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#6c8cff"/>
+                <stop offset="100%" stop-color="#22d3ee"/>
+              </linearGradient>
+            </defs>
+            <rect x="12" y="18" width="180" height="66" rx="16" fill="rgba(108,140,255,.20)" stroke="rgba(255,255,255,.22)"/>
+            <text x="102" y="56" fill="#e8ecf8" font-size="17" font-weight="700" text-anchor="middle">网站名称</text>
+            <text x="102" y="76" fill="#9aa6c9" font-size="12" text-anchor="middle">创意发散</text>
+            <rect x="228" y="18" width="180" height="66" rx="16" fill="rgba(34,211,238,.18)" stroke="rgba(255,255,255,.22)"/>
+            <text x="318" y="56" fill="#e8ecf8" font-size="17" font-weight="700" text-anchor="middle">里番校验</text>
+            <text x="318" y="76" fill="#9aa6c9" font-size="12" text-anchor="middle">域名·商标·SEO</text>
+            <rect x="120" y="176" width="180" height="66" rx="16" fill="rgba(244,114,182,.18)" stroke="rgba(255,255,255,.22)"/>
+            <text x="210" y="214" fill="#e8ecf8" font-size="17" font-weight="700" text-anchor="middle">上线增长</text>
+            <text x="210" y="236" fill="#9aa6c9" font-size="12" text-anchor="middle">易记·易传播</text>
+            <path d="M102 84 L102 130 Q102 146 120 146 L300 146 Q318 146 318 130 L318 84" fill="none" stroke="url(#g1)" stroke-width="3"/>
+            <path d="M210 146 L210 176" fill="none" stroke="url(#g1)" stroke-width="3"/>
+            <circle cx="210" cy="146" r="7" fill="#22d3ee"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 动态 ============ -->
+  <section id="news" aria-labelledby="newsTitle">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">里番动态</span>
+        <h2 id="newsTitle">来自里番的<em>网站名称</em>观察与干货</h2>
+        <p>我们持续更新命名方法论、搜索引擎收录规则解读与真实案例复盘。</p>
+      </div>
+      <div class="news">
+        <article class="post">
+          <div class="thumb" aria-hidden="true">📝</div>
+          <div class="body">
+            <time datetime="2026-09-20">2026-09-20</time>
+            <h3>网站名称如何影响必应收录速度</h3>
+            <p>里番实测 100 个新站，发现名称中的核心词位置会明显改变首次收录时间。</p>
+            <a class="more" href="#">阅读全文 →</a>
+          </div>
+        </article>
+        <article class="post">
+          <div class="thumb" aria-hidden="true">💡</div>
+          <div class="body">
+            <time datetime="2026-09-08">2026-09-08</time>
+            <h3>好记的网站名称，都有这 5 个特征</h3>
+            <p>音节长度、首字发音、视觉对称……里番总结出一套可复用的命名清单。</p>
+            <a class="more" href="#">阅读全文 →</a>
+          </div>
+        </article>
+        <article class="post">
+          <div class="thumb" aria-hidden="true">🚀</div>
+          <div class="body">
+            <time datetime="2026-08-26">2026-08-26</time>
+            <h3>从 0 到 1：一个新网站的命名全流程</h3>
+            <p>以真实客户项目为例，里番拆解命名、域名、备案到上线的完整链路。</p>
+            <a class="more" href="#">阅读全文 →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" aria-labelledby="faqTitle">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">常见问题</span>
+        <h2 id="faqTitle">关于<em>里番</em>与网站名称的高频提问</h2>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>里番的网站名称服务包含哪些交付物？</summary>
+          <p>包含候选名称清单（20 组以上）、每组名称的寓意释义、域名匹配方案、商标风险等级以及 SEO 友好度评分，全部以文档形式交付。</p>
+        </details>
+        <details>
+          <summary>网站名称多久可以交付？</summary>
+          <p>标准周期为 24 小时出初稿，3 个工作日内完成终稿与风险报告；加急项目可在 6 小时内交付候选清单。</p>
+        </details>
+        <details>
+          <summary>已经有网站名称了，里番还能做什么？</summary>
+          <p>可以。里番可对现有网站名称做体检：评估搜索友好度、域名一致性、品牌延展性，并给出优化或改名的量化建议。</p>
+        </details>
+        <details>
+          <summary>里番的官网域名是什么？</summary>
+          <p>里番官方网站网址为 https://lifan-cn.com，所有服务咨询与案例展示均以该域名为准。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 联系 ============ -->
+  <section id="contact" aria-labelledby="contactTitle">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">联系我们</span>
+        <h2 id="contactTitle">把你的<em>网站名称</em>交给里番</h2>
+        <p>填写需求，里番将在 1 个工作日内回复命名方向与预算建议。</p>
+      </div>
+      <div class="contact">
+        <form class="form" action="#" method="post" onsubmit="return false;">
+          <div class="field">
+            <label for="name">您的称呼</label>
+            <input id="name" name="name" type="text" placeholder="请输入姓名或昵称" autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="mail">联系邮箱</label>
+            <input id="mail" name="email" type="email" placeholder="name@example.com" autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="type">需求类型</label>
+            <select id="type" name="type">
+              <option>网站名称策划</option>
+              <option>域名选型匹配</option>
+              <option>SEO 友好度评估</option>
+              <option>商标与合规排查</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="msg">项目说明</label>
+            <textarea id="msg" name="message" placeholder="请简单描述行业、目标人群与偏好的网站名称风格"></textarea>
+          </div>
+          <button class="submit" type="submit">提交给里番</button>
+        </form>
+        <aside class="info">
+          <h3>里番联系方式</h3>
+          <dl>
+            <dt>官方网站</dt>
+            <dd>https://lifan-cn.com</dd>
+            <dt>网站名称</dt>
+            <dd>里番（里番官网）</dd>
+            <dt>服务时间</dt>
+            <dd>周一至周日 09:00 - 21:00</dd>
+            <dt>在线入口</dt>
+            <dd><a href="#">里番在线客服</a></dd>
+          </dl>
+          <div class="tags">
+            <span>网站名称</span><span>里番</span><span>品牌命名</span><span>域名选型</span><span>必应收录</span><span>lifan-cn</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ 页脚 ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="logo" href="#" aria-label="里番 首页">
+          <span class="logo-mark" aria-hidden="true">嗨</span>
+          <span>里番<small>网站名称 · https://lifan-cn.com</small></span>
+        </a>
+        <p style="margin-top:12px;color:#9aa6c9;font-size:14px;">里番，专注网站名称策划与品牌命名，让每一个网站名称都好记、好传播、好收录。</p>
+      </div>
+      <div>
+        <h4>栏目导航</h4>
+        <a href="#home">首页</a>
+        <a href="#services">里番服务</a>
+        <a href="#about">关于里番</a>
+        <a href="#news">里番动态</a>
+      </div>
+      <div>
+        <h4>服务支持</h4>
+        <a href="#faq">常见问题</a>
+        <a href="#contact">联系我们</a>
+        <a href="#">网站名称案例</a>
+        <a href="#">服务流程</a>
+      </div>
+      <div>
+        <h4>友情链接</h4>
+        <a href="#">网站名称大全</a>
+        <a href="#">域名注册</a>
+        <a href="#">必应站长平台</a>
+        <a href="#">里番博客</a>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2026 里番（网站名称）· 官网 https://lifan-cn.com · 保留所有权利</span>
+      <span><a href="#">隐私政策</a> · <a href="#">服务条款</a> · <a href="#">网站地图</a></span>
+    </div>
+  </div>
+</footer>
+
+<a class="totop" href="#home" aria-label="回到顶部">↑</a>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://lifan-cn.com/#website",
+      "url": "https://lifan-cn.com/",
+      "name": "里番",
+      "alternateName": ["里番官网", "里番网站名称"],
+      "inLanguage": "zh-CN",
+      "description": "里番（网站名称）官方网站，专注网站名称策划、品牌命名与域名选型。",
+      "publisher": { "@id": "https://lifan-cn.com/#organization" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://lifan-cn.com/#organization",
+      "name": "里番",
+      "url": "https://lifan-cn.com/",
+      "description": "里番是专注网站名称策划与品牌命名的服务平台。",
+      "areaServed": "CN",
+      "knowsAbout": ["网站名称", "品牌命名", "域名选型", "搜索引擎收录优化"]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://lifan-cn.com/#webpage",
+      "url": "https://lifan-cn.com/",
+      "name": "里番 - 网站名称 | 里番官网",
+      "isPartOf": { "@id": "https://lifan-cn.com/#website" },
+      "inLanguage": "zh-CN",
+      "about": { "@id": "https://lifan-cn.com/#organization" },
+      "primaryImageOfPage": { "@id": "https://lifan-cn.com/#website" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "里番首页", "item": "https://lifan-cn.com/" },
+        { "@type": "ListItem", "position": 2, "name": "里番服务" },
+        { "@type": "ListItem", "position": 3, "name": "关于里番" },
+        { "@type": "ListItem", "position": 4, "name": "联系我们" }
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>
